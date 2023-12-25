@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const routes = require('./routes/route');
+const config = require('./config/config');
 
 const app = express();
 
@@ -15,6 +16,6 @@ mongoose.connect('mongodb+srv://sneilhhh:vjBHmzqKtl5HmYqw@cluster0.foa5oyg.mongo
 
 app.use('/', routes);
 
-app.listen(3000, (req, res) => {
+app.listen(config.PORT, (req, res) => {
     console.log('app is listening at 3000');
 })
