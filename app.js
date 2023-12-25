@@ -17,5 +17,5 @@ mongoose.connect(config.url)
 app.use('/', routes);
 
 app.listen(config.PORT, (req, res) => {
-    console.log('app is listening at 8002');
+    console.log('app is listening at 3000');
 })
