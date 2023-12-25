@@ -5,7 +5,7 @@ const config = require('./config/config');
 
 const app = express();
 
-mongoose.connect(url)
+mongoose.connect(config.url)
 .then(() => {
     console.log("connected to database");
 })
