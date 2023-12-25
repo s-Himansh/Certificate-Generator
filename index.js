@@ -5,7 +5,7 @@ const config = require('./config/config');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://'+config.connectionName+':'+config.connectionPass+'@cluster0.foa5oyg.mongodb.net/CertificateData?retryWrites=true&w=majority')
+mongoose.connect(url)
 .then(() => {
     console.log("connected to database");
 })
